@@ -20,5 +20,11 @@ const SignupScreen = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({});
+SignupScreen.navigationOptions = () => {
+  return {
+    headerShown: false
+  };
+};
+
 
 export default SignupScreen;
