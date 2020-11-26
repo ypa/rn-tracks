@@ -30,6 +30,7 @@ const SignupScreen = ({ navigation }) => {
         autoCapitalize="none"
         autoCorrect={false}
       />
+      <Text>{state.errorMessage}</Text>
       <Spacer>
         <Button title="Sign Up" onPress={() => signup({ email: email, password: password })} />
       </Spacer>
