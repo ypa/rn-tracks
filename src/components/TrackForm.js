@@ -19,10 +19,11 @@ const TrackForm = () => {
           placeholder="Enter name"
         />
       </Spacer>
-      { recording
-        ? <Button title="Stop" onPress={stopRecording} />
-        : <Button title="Start Recording" onPress={startRecording} />
-      }
+      { recording ? (
+        <Button title="Stop" onPress={stopRecording} />
+      ) : (
+        <Button title="Start Recording" onPress={startRecording} />
+      )}
     </>
   )
 };
